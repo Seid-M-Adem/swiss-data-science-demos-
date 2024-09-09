@@ -19,3 +19,37 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+**Folder README.md Example (e.g., `data_analytics_bi/README.md`)**
+```markdown
+# Data Analytics and BI Demo
+
+## Overview
+
+This demo showcases a data analytics and business intelligence solution for a Swiss financial institution. The goal is to analyze customer transaction patterns to enhance customer retention strategies.
+
+## Demo
+
+The demo includes:
+- An interactive Tableau dashboard.
+- Python scripts for data processing.
+- Jupyter Notebooks for analysis.
+
+## Getting Started
+
+1. **Data:** The dataset is located in the `data/` folder.
+2. **Code:** The Python script for creating the dashboard is located in the `code/` folder.
+3. **Notebooks:** Jupyter Notebooks for analysis are located in the `notebooks/` folder.
+
+### Prerequisites
+
+- Python 3.x
+- Tableau (for dashboard)
+- Pandas, NumPy (Python libraries)
+
+### Running the Demo
+
+1. Prepare the environment:
+   ```bash
+   pip install pandas numpy
