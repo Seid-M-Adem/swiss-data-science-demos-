@@ -39,6 +39,8 @@ This script leverages Dash and Plotly to create an interactive dashboard that al
 # Modified dashboard.py Script
 Install Additional Libraries: Ensure you have plotly and dash installed in your environment. You also need selenium and Pillow for saving HTML and PNG files.
 bash
+
+
 Copy code
 
    pip install dash plotly selenium pillow
