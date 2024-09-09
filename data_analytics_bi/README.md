@@ -46,3 +46,14 @@ Copy code
    pip install dash plotly selenium pillow
    
 Modify the Script: Update dashboard.py to include code that generates and saves the 
+
+# Steps to Fix the Error
+## Install kaleido: Run the following command to install the kaleido package:
+bash
+# Copy code
+
+  pip install -U kaleido
+
+Update Your Script: Ensure your script uses kaleido for image export. The plotly library should automatically use kaleido once it is installed.
+Verify the Installation: After installing kaleido, re-run your script to ensure it works correctly.
+
