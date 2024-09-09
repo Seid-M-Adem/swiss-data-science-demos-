@@ -21,11 +21,18 @@ Save the Script: Copy the above code into a file named dashboard.py inside the d
 Install Dependencies: Make sure you have the necessary Python packages installed. You can install them using pip:
 bash
 Copy code
+   
+   
    pip install pandas dash plotly
+
+   
 Run the Script: Execute the script from your terminal or command line:
 bash
+
 Copy code
+
    python data_analytics_bi/code/dashboard.py
+   
 View the Dashboard: Open your web browser and go to http://127.0.0.1:8050/ to view the interactive dashboard.
 This script leverages Dash and Plotly to create an interactive dashboard that allows users to filter data based on the churn risk and view visualizations accordingly. It’s a powerful tool for exploring and presenting data insights directly from your GitHub Codespace.
 
@@ -33,5 +40,7 @@ This script leverages Dash and Plotly to create an interactive dashboard that al
 Install Additional Libraries: Ensure you have plotly and dash installed in your environment. You also need selenium and Pillow for saving HTML and PNG files.
 bash
 Copy code
+
    pip install dash plotly selenium pillow
+   
 Modify the Script: Update dashboard.py to include code that generates and saves the 
