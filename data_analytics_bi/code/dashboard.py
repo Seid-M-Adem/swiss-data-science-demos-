@@ -1,54 +1,77 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+from dash import Dash, dcc, html
+from dash.dependencies import Input, Output
 import plotly.express as px
-from tabpy.tabpy_tools.client import Client
-
-# Connect to TabPy server
-client = Client('http://localhost:9004/')
+import plotly.io as pio
 
 # Load the dataset
-df = pd.read_csv('data/customer_transactions.csv')
+df = pd.read_csv('/workspaces/swiss-data-science-demos-/data_analytics_bi/data/customer_transactions.csv')
 
-# Basic data cleaning
-df.dropna(inplace=True)
+# Initialize the Dash app
+app = Dash(__name__)
 
-# Example analysis: Average transaction amount per customer
-avg_transaction = df.groupby('customer_id')['transaction_amount'].mean().reset_index()
-avg_transaction.rename(columns={'transaction_amount': 'avg_transaction_amount'}, inplace=True)
+# Define the layout of the dashboard
+app.layout = html.Div([
+    html.H1("Customer Transactions Dashboard"),
+    
+    html.Div([
+        dcc.Dropdown(
+            id='churn-risk-dropdown',
+            options=[
+                {'label': 'Low', 'value': 'Low'},
+                {'label': 'Medium', 'value': 'Medium'},
+                {'label': 'High', 'value': 'High'}
+            ],
+            value='Low'
+        )
+    ]),
+    
+    html.Div([
+        dcc.Graph(id='transaction-amount-graph')
+    ]),
+    
+    html.Div([
+        dcc.Graph(id='churn-risk-distribution-graph')
+    ])
+])
 
-# Example: Churn risk group distribution
-df['churn_risk_group'] = pd.cut(df['churn_risk'], bins=[0, 3, 6, 10], labels=['Low', 'Medium', 'High'])
+# Define callback to update graphs based on dropdown selection
+@app.callback(
+    Output('transaction-amount-graph', 'figure'),
+    Output('churn-risk-distribution-graph', 'figure'),
+    [Input('churn-risk-dropdown', 'value')]
+)
+def update_graphs(selected_risk):
+    # Filter data based on selected churn risk
+    filtered_df = df[df['churn_risk'] == selected_risk]
+    
+    # Create transaction amount histogram
+    transaction_amount_fig = px.histogram(
+        filtered_df,
+        x='transaction_amount',
+        title=f'Distribution of Transaction Amounts (Churn Risk: {selected_risk})',
+        labels={'transaction_amount': 'Transaction Amount'}
+    )
+    
+    # Create churn risk distribution pie chart
+    churn_risk_distribution_fig = px.pie(
+        df,
+        names='churn_risk',
+        title='Churn Risk Distribution',
+        labels={'churn_risk': 'Churn Risk'},
+        hole=0.3
+    )
+    
+    try:
+        # Save the figures to files
+        pio.write_image(transaction_amount_fig, '/workspaces/swiss-data-science-demos-/data_analytics_bi/visualizations/dashboard_overview.png')
+        pio.write_html(churn_risk_distribution_fig, '/workspaces/swiss-data-science-demos-/data_analytics_bi/visualizations/dashboard_interactive.html')
+        print("Images saved successfully.")
+    except Exception as e:
+        print(f"An error occurred while saving images: {e}")
+    
+    return transaction_amount_fig, churn_risk_distribution_fig
 
-# Create visualizations
-# 1. Static Visualization: Average Transaction Amount
-plt.figure(figsize=(10, 6))
-sns.histplot(avg_transaction['avg_transaction_amount'], bins=30, kde=True)
-plt.title('Distribution of Average Transaction Amount per Customer')
-plt.xlabel('Average Transaction Amount')
-plt.ylabel('Frequency')
-plt.savefig('data_analytics_bi/visualizations/dashboard_overview.png')
-plt.close()
-
-# 2. Interactive Visualization: Churn Risk Distribution
-fig = px.pie(df, names='churn_risk_group', title='Churn Risk Group Distribution')
-fig.write_html('data_analytics_bi/visualizations/dashboard_interactive.html')
-
-# Deploy functions to TabPy
-def calc_avg_transaction_amount(customer_id, transaction_amount):
-    df = pd.DataFrame({'customer_id': customer_id, 'transaction_amount': transaction_amount})
-    result = df.groupby('customer_id')['transaction_amount'].mean().tolist()
-    return result
-
-def assign_churn_risk_group(churn_risk):
-    risk_group = pd.cut(churn_risk, bins=[0, 3, 6, 10], labels=['Low', 'Medium', 'High'])
-    return risk_group.tolist()
-
-client.deploy('CalcAvgTransactionAmount', calc_avg_transaction_amount,
-              'Calculates average transaction amount per customer', override=True)
-
-client.deploy('AssignChurnRiskGroup', assign_churn_risk_group,
-              'Assigns churn risk group based on churn risk score', override=True)
-
-print("Python functions deployed to TabPy. Visualizations saved and ready for GitHub.")
-
+# Run the app
+if __name__ == '__main__':
+    app.run_server(debug=True)
