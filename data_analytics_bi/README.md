@@ -6,7 +6,7 @@ In this demo, we analyze customer transaction patterns and create interactive da
 
 ### Static Visualization
 
-![Dashboard Overview](visualizations/dashboard_overview.png)
+![Dashboard Overview](visualizations/scatter_transaction_age.png)
 
 *Figure 1: Distribution of Average Transaction Amount per Customer*
 
