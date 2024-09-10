@@ -12,7 +12,8 @@ In this demo, we analyze customer transaction patterns and create interactive da
 
 ### Interactive Visualization
 
-[Churn Risk Group Distribution](visualizations/dashboard_interactive.html)
+[Churn Risk Group Distribution](visualizations/scatter_transaction_age.html)
+
 
 *Interactive visualization showing the distribution of churn risk groups.*
 
