@@ -12,7 +12,8 @@ In this demo, we analyze customer transaction patterns and create interactive da
 
 ### Interactive Visualization
 
-[Churn Risk Group Distribution](visualizations/Dash_medium.pdf)
+[Churn Risk Group Distribution](visualizations/Dash5in1.pdf)
+
 
 
 *Interactive visualization showing the distribution of churn risk groups.*
