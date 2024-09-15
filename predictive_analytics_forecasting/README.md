@@ -4,7 +4,7 @@ Copy code
 
 ## Overview
 
-This project focuses on developing and validating sales forecasting models for a Swiss retail chain. It includes a comprehensive dataset and a variety of tools for time series analysis and model training. The project features:
+This project focuses on developing and validating sales forecasting models for a Swiss retail chain model data Example. It includes a comprehensive dataset and a variety of tools for time series analysis and model training. The project features:
 
 - **Data Generation**: A script to create realistic sales data.
 - **Forecast Model**: A Python script using Scikit-learn to build and validate forecasting models.
