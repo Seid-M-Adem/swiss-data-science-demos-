@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 
 # Load the data
-data = pd.read_csv('data/sales_data.csv', parse_dates=['date'])
+data = pd.read_csv('/workspaces/swiss-data-science-demos-/predictive_analytics_forecasting/data/sales_data.csv', parse_dates=['date'])
 
 # Feature Engineering
 data['month'] = data['date'].dt.month
