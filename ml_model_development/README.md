@@ -1,4 +1,4 @@
-# Swiss Clinical Trial Machine Learning Model DemO example
+# Clinical Trial Machine Learning Model Demo example
 
 This project is a demonstration of machine learning model development for analyzing clinical trial data in the Swiss pharmaceutical market. The dataset used is synthetic, but reflects real-world attributes found in clinical trials.
 
