@@ -1,15 +1,16 @@
 {
-    "name": "ML Model Development for Swiss Market",
-    "image": "mcr.microsoft.com/devcontainers/python:3.9",
-    "postCreateCommand": "pip install -r requirements.txt",
-    "settings": {
-      "terminal.integrated.defaultProfile.linux": "/bin/bash"
-    },
-    "extensions": [
-      "ms-python.python",
-      "ms-toolsai.jupyter"
-    ],
-    "forwardPorts": [8888],
-    "remoteUser": "vscode"
-  }
-  
+  "name": "Python TensorFlow Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt"
+}
+
