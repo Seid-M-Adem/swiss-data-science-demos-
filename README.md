@@ -1,6 +1,6 @@
 # Swiss Data Science Demos
 
-Welcome to the Swiss Data Science Demos repository! This repository contains various data science demonstrations tailored to the Swiss market. Each demo includes practical examples, code, and documentation to help you understand and apply data science techniques effectively.
+Welcome to the Swiss Data Science Demos repository! This repository contains various data science demonstrations tailored to the Swiss market. The data used in each demo is a real-world example, generated based on different algorithms but not actual real data. Each demo includes practical examples, code, and documentation to help you understand and apply data science techniques effectively.
 
 ## Demos
 
