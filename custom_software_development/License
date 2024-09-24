@@ -1,0 +1,78 @@
+
+### 2. `app.py`
+
+```python
+import os
+import tkinter as tk
+from tkinter import filedialog, messagebox
+from data_processing import DataProcessor
+
+class RealEstateApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Switzerland Real Estate Management Software")
+        
+        # Set the base directory for data storage
+        self.base_data_dir = '/workspaces/swiss-data-science-demos-/custom_software_development/data'
+        self.raw_data_dir = os.path.join(self.base_data_dir, 'raw_data')
+        self.processed_data_dir = os.path.join(self.base_data_dir, 'processed_data')
+
+        # Ensure the directories exist
+        os.makedirs(self.raw_data_dir, exist_ok=True)
+        os.makedirs(self.processed_data_dir, exist_ok=True)
+        
+        self.processor = DataProcessor()
+
+        self.create_widgets()
+
+    def create_widgets(self):
+        self.label = tk.Label(self.root, text="Real Estate Management Application", font=("Helvetica", 16))
+        self.label.pack(pady=10)
+
+        self.import_button = tk.Button(self.root, text="Import Property Listings", command=self.import_data)
+        self.import_button.pack(pady=5)
+
+        self.process_button = tk.Button(self.root, text="Process Data", command=self.process_data)
+        self.process_button.pack(pady=5)
+
+        self.export_button = tk.Button(self.root, text="Export Processed Data", command=self.export_data)
+        self.export_button.pack(pady=5)
+
+    def import_data(self):
+        file_path = filedialog.askopenfilename(
+            title="Select a Property Listings File",
+            initialdir=self.raw_data_dir,
+            filetypes=(("CSV files", "*.csv"), ("JSON files", "*.json"))
+        )
+        if file_path:
+            try:
+                self.processor.load_data(file_path)
+                messagebox.showinfo("Success", "Property listings imported successfully!")
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to import data: {e}")
+
+    def process_data(self):
+        try:
+            self.processor.process_data()
+            messagebox.showinfo("Success", "Data processed successfully!")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to process data: {e}")
+
+    def export_data(self):
+        file_path = filedialog.asksaveasfilename(
+            defaultextension=".csv",
+            initialdir=self.processed_data_dir,
+            filetypes=(("CSV files", "*.csv"), ("JSON files", "*.json")),
+            title="Save Processed Data"
+        )
+        if file_path:
+            try:
+                self.processor.save_data(file_path)
+                messagebox.showinfo("Success", "Processed data exported successfully!")
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to export data: {e}")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = RealEstateApp(root)
+    root.mainloop()

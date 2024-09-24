@@ -1,1 +1,101 @@
-
+Property ID,Location,Price (CHF),Size (m²),Bedrooms,Bathrooms,Property Type,Description
+PR0001,Lausanne,2030000,203,4,3,Apartment,Beautiful Apartment located in Lausanne with 2 bathrooms and 6 bedrooms.
+PR0002,Zurich,3627000,279,2,2,Penthouse,Beautiful Penthouse located in Zurich with 1 bathrooms and 5 bedrooms.
+PR0003,Zurich,1482000,114,5,2,House,Beautiful Villa located in Zurich with 3 bathrooms and 4 bedrooms.
+PR0004,Biel,1036000,148,4,4,House,Beautiful Villa located in Biel with 2 bathrooms and 2 bedrooms.
+PR0005,Bern,1575000,175,4,1,Penthouse,Beautiful House located in Bern with 3 bathrooms and 4 bedrooms.
+PR0006,Zurich,2236000,172,5,2,Apartment,Beautiful Penthouse located in Zurich with 2 bathrooms and 5 bedrooms.
+PR0007,La Chaux-de-Fonds,1185000,158,2,3,Apartment,Beautiful Villa located in La Chaux-de-Fonds with 4 bathrooms and 2 bedrooms.
+PR0008,Basel,1862000,196,2,2,Villa,Beautiful Penthouse located in Basel with 3 bathrooms and 1 bedrooms.
+PR0009,Lausanne,820000,82,5,3,Villa,Beautiful Villa located in Lausanne with 1 bathrooms and 3 bedrooms.
+PR0010,Bern,270000,30,6,2,Villa,Beautiful Villa located in Bern with 2 bathrooms and 3 bedrooms.
+PR0011,Lugano,1100000,100,1,3,House,Beautiful House located in Lugano with 3 bathrooms and 4 bedrooms.
+PR0012,Geneva,2724000,227,5,4,Villa,Beautiful Apartment located in Geneva with 2 bathrooms and 4 bedrooms.
+PR0013,La Chaux-de-Fonds,735000,98,2,3,Villa,Beautiful Apartment located in La Chaux-de-Fonds with 2 bathrooms and 4 bedrooms.
+PR0014,Lugano,1507000,137,1,2,Penthouse,Beautiful Villa located in Lugano with 4 bathrooms and 1 bedrooms.
+PR0015,Bern,747000,83,2,3,Villa,Beautiful House located in Bern with 4 bathrooms and 5 bedrooms.
+PR0016,Lausanne,970000,97,5,3,Villa,Beautiful Villa located in Lausanne with 2 bathrooms and 6 bedrooms.
+PR0017,Geneva,2316000,193,5,2,Penthouse,Beautiful Villa located in Geneva with 2 bathrooms and 5 bedrooms.
+PR0018,Geneva,2076000,173,1,2,House,Beautiful Penthouse located in Geneva with 4 bathrooms and 4 bedrooms.
+PR0019,Geneva,1392000,116,1,2,Apartment,Beautiful Apartment located in Geneva with 1 bathrooms and 4 bedrooms.
+PR0020,Lugano,2189000,199,2,1,Villa,Beautiful House located in Lugano with 1 bathrooms and 5 bedrooms.
+PR0021,Basel,579500,61,5,3,Penthouse,Beautiful Apartment located in Basel with 2 bathrooms and 4 bedrooms.
+PR0022,Bern,1755000,195,5,2,Penthouse,Beautiful House located in Bern with 4 bathrooms and 4 bedrooms.
+PR0023,Biel,413000,59,2,2,House,Beautiful Apartment located in Biel with 4 bathrooms and 3 bedrooms.
+PR0024,Lugano,2739000,249,3,2,Penthouse,Beautiful Apartment located in Lugano with 4 bathrooms and 5 bedrooms.
+PR0025,Bern,378000,42,6,1,House,Beautiful Villa located in Bern with 1 bathrooms and 1 bedrooms.
+PR0026,Geneva,1224000,102,6,1,Apartment,Beautiful House located in Geneva with 1 bathrooms and 1 bedrooms.
+PR0027,La Chaux-de-Fonds,1087500,145,3,3,Apartment,Beautiful House located in La Chaux-de-Fonds with 1 bathrooms and 5 bedrooms.
+PR0028,Geneva,720000,60,4,1,Villa,Beautiful Penthouse located in Geneva with 1 bathrooms and 2 bedrooms.
+PR0029,Geneva,2352000,196,2,2,House,Beautiful Apartment located in Geneva with 1 bathrooms and 1 bedrooms.
+PR0030,Geneva,2424000,202,6,2,Penthouse,Beautiful Penthouse located in Geneva with 1 bathrooms and 1 bedrooms.
+PR0031,Biel,1519000,217,1,2,Villa,Beautiful Apartment located in Biel with 4 bathrooms and 2 bedrooms.
+PR0032,Lausanne,370000,37,5,1,Villa,Beautiful Penthouse located in Lausanne with 1 bathrooms and 5 bedrooms.
+PR0033,Geneva,912000,76,6,2,Penthouse,Beautiful Penthouse located in Geneva with 1 bathrooms and 4 bedrooms.
+PR0034,La Chaux-de-Fonds,2197500,293,3,2,Apartment,Beautiful Villa located in La Chaux-de-Fonds with 4 bathrooms and 6 bedrooms.
+PR0035,Geneva,1656000,138,3,4,Penthouse,Beautiful Apartment located in Geneva with 3 bathrooms and 2 bedrooms.
+PR0036,Lausanne,1790000,179,1,4,Apartment,Beautiful Villa located in Lausanne with 2 bathrooms and 3 bedrooms.
+PR0037,Geneva,2592000,216,3,1,Penthouse,Beautiful Penthouse located in Geneva with 4 bathrooms and 5 bedrooms.
+PR0038,Lucerne,968000,88,2,3,House,Beautiful House located in Lucerne with 4 bathrooms and 2 bedrooms.
+PR0039,Geneva,2472000,206,2,2,House,Beautiful Villa located in Geneva with 4 bathrooms and 1 bedrooms.
+PR0040,Biel,1316000,188,6,2,Penthouse,Beautiful Villa located in Biel with 2 bathrooms and 5 bedrooms.
+PR0041,Geneva,1812000,151,1,4,House,Beautiful Villa located in Geneva with 1 bathrooms and 4 bedrooms.
+PR0042,Geneva,1548000,129,4,3,Apartment,Beautiful Villa located in Geneva with 4 bathrooms and 6 bedrooms.
+PR0043,Lucerne,2398000,218,1,4,Penthouse,Beautiful House located in Lucerne with 3 bathrooms and 2 bedrooms.
+PR0044,Biel,791000,113,6,2,Villa,Beautiful House located in Biel with 1 bathrooms and 4 bedrooms.
+PR0045,La Chaux-de-Fonds,1965000,262,2,1,Apartment,Beautiful Villa located in La Chaux-de-Fonds with 3 bathrooms and 5 bedrooms.
+PR0046,La Chaux-de-Fonds,547500,73,3,1,House,Beautiful Penthouse located in La Chaux-de-Fonds with 2 bathrooms and 4 bedrooms.
+PR0047,Biel,1169000,167,5,2,Villa,Beautiful House located in Biel with 3 bathrooms and 5 bedrooms.
+PR0048,Biel,1491000,213,6,4,Penthouse,Beautiful Apartment located in Biel with 4 bathrooms and 1 bedrooms.
+PR0049,La Chaux-de-Fonds,367500,49,4,1,Apartment,Beautiful Apartment located in La Chaux-de-Fonds with 1 bathrooms and 4 bedrooms.
+PR0050,La Chaux-de-Fonds,1267500,169,3,1,House,Beautiful Villa located in La Chaux-de-Fonds with 1 bathrooms and 1 bedrooms.
+PR0051,Geneva,3468000,289,3,3,Penthouse,Beautiful Apartment located in Geneva with 3 bathrooms and 3 bedrooms.
+PR0052,Zurich,2717000,209,5,3,House,Beautiful Apartment located in Zurich with 3 bathrooms and 2 bedrooms.
+PR0053,La Chaux-de-Fonds,1552500,207,3,3,House,Beautiful Penthouse located in La Chaux-de-Fonds with 2 bathrooms and 3 bedrooms.
+PR0054,Geneva,780000,65,5,3,Penthouse,Beautiful Villa located in Geneva with 1 bathrooms and 3 bedrooms.
+PR0055,St. Gallen,1496000,187,4,1,Penthouse,Beautiful Apartment located in St. Gallen with 1 bathrooms and 2 bedrooms.
+PR0056,Basel,532000,56,6,2,Villa,Beautiful House located in Basel with 1 bathrooms and 5 bedrooms.
+PR0057,Lucerne,660000,60,3,4,Villa,Beautiful House located in Lucerne with 2 bathrooms and 1 bedrooms.
+PR0058,St. Gallen,1976000,247,2,1,House,Beautiful House located in St. Gallen with 1 bathrooms and 4 bedrooms.
+PR0059,Zurich,1144000,88,6,4,Apartment,Beautiful Apartment located in Zurich with 4 bathrooms and 4 bedrooms.
+PR0060,Geneva,2280000,190,1,1,Villa,Beautiful Penthouse located in Geneva with 1 bathrooms and 1 bedrooms.
+PR0061,Geneva,1680000,140,4,4,House,Beautiful Villa located in Geneva with 3 bathrooms and 5 bedrooms.
+PR0062,Zurich,2951000,227,3,2,Villa,Beautiful House located in Zurich with 3 bathrooms and 1 bedrooms.
+PR0063,Geneva,3096000,258,6,4,Villa,Beautiful Penthouse located in Geneva with 4 bathrooms and 2 bedrooms.
+PR0064,St. Gallen,1776000,222,3,2,House,Beautiful Villa located in St. Gallen with 1 bathrooms and 2 bedrooms.
+PR0065,Geneva,1944000,162,5,2,Villa,Beautiful House located in Geneva with 1 bathrooms and 6 bedrooms.
+PR0066,St. Gallen,1064000,133,1,3,Apartment,Beautiful Penthouse located in St. Gallen with 3 bathrooms and 6 bedrooms.
+PR0067,Bern,1161000,129,3,3,House,Beautiful Apartment located in Bern with 1 bathrooms and 6 bedrooms.
+PR0068,Lausanne,620000,62,4,3,Villa,Beautiful Apartment located in Lausanne with 1 bathrooms and 6 bedrooms.
+PR0069,Zurich,3003000,231,6,1,House,Beautiful Penthouse located in Zurich with 3 bathrooms and 5 bedrooms.
+PR0070,Geneva,984000,82,2,3,Villa,Beautiful Penthouse located in Geneva with 2 bathrooms and 4 bedrooms.
+PR0071,Lausanne,1700000,170,1,3,Villa,Beautiful Penthouse located in Lausanne with 2 bathrooms and 1 bedrooms.
+PR0072,Lausanne,1190000,119,1,4,Villa,Beautiful Villa located in Lausanne with 1 bathrooms and 4 bedrooms.
+PR0073,Basel,589000,62,4,3,Villa,Beautiful Villa located in Basel with 3 bathrooms and 1 bedrooms.
+PR0074,Lugano,2475000,225,5,1,House,Beautiful Apartment located in Lugano with 1 bathrooms and 2 bedrooms.
+PR0075,Lausanne,2010000,201,4,4,Apartment,Beautiful Villa located in Lausanne with 3 bathrooms and 5 bedrooms.
+PR0076,Lucerne,924000,84,4,1,Apartment,Beautiful Villa located in Lucerne with 2 bathrooms and 3 bedrooms.
+PR0077,Lugano,2475000,225,3,4,Villa,Beautiful Penthouse located in Lugano with 4 bathrooms and 1 bedrooms.
+PR0078,Bern,1431000,159,5,1,Villa,Beautiful House located in Bern with 3 bathrooms and 1 bedrooms.
+PR0079,Lugano,2651000,241,5,2,Penthouse,Beautiful Villa located in Lugano with 1 bathrooms and 3 bedrooms.
+PR0080,Lausanne,2890000,289,6,3,Villa,Beautiful Apartment located in Lausanne with 2 bathrooms and 2 bedrooms.
+PR0081,Geneva,2148000,179,5,4,House,Beautiful Penthouse located in Geneva with 1 bathrooms and 4 bedrooms.
+PR0082,Zurich,1885000,145,2,3,Penthouse,Beautiful Villa located in Zurich with 2 bathrooms and 2 bedrooms.
+PR0083,Biel,1855000,265,1,3,Villa,Beautiful Villa located in Biel with 3 bathrooms and 2 bedrooms.
+PR0084,Lausanne,2280000,228,4,1,Apartment,Beautiful Apartment located in Lausanne with 3 bathrooms and 1 bedrooms.
+PR0085,La Chaux-de-Fonds,1192500,159,1,1,House,Beautiful Villa located in La Chaux-de-Fonds with 1 bathrooms and 2 bedrooms.
+PR0086,St. Gallen,1216000,152,3,1,Penthouse,Beautiful Penthouse located in St. Gallen with 4 bathrooms and 2 bedrooms.
+PR0087,Lugano,1276000,116,6,1,Apartment,Beautiful Villa located in Lugano with 1 bathrooms and 3 bedrooms.
+PR0088,Lausanne,1740000,174,2,2,House,Beautiful House located in Lausanne with 1 bathrooms and 5 bedrooms.
+PR0089,La Chaux-de-Fonds,1282500,171,4,4,Penthouse,Beautiful Penthouse located in La Chaux-de-Fonds with 3 bathrooms and 1 bedrooms.
+PR0090,Zurich,2847000,219,5,2,Apartment,Beautiful Apartment located in Zurich with 1 bathrooms and 1 bedrooms.
+PR0091,La Chaux-de-Fonds,1515000,202,2,4,Villa,Beautiful Penthouse located in La Chaux-de-Fonds with 4 bathrooms and 3 bedrooms.
+PR0092,Lucerne,473000,43,2,3,Villa,Beautiful House located in Lucerne with 1 bathrooms and 4 bedrooms.
+PR0093,Bern,2682000,298,5,4,House,Beautiful House located in Bern with 1 bathrooms and 4 bedrooms.
+PR0094,Lucerne,1606000,146,3,4,Penthouse,Beautiful Apartment located in Lucerne with 2 bathrooms and 6 bedrooms.
+PR0095,Biel,336000,48,4,3,Penthouse,Beautiful Penthouse located in Biel with 1 bathrooms and 2 bedrooms.
+PR0096,St. Gallen,952000,119,3,4,Penthouse,Beautiful Villa located in St. Gallen with 4 bathrooms and 1 bedrooms.
+PR0097,Biel,406000,58,4,3,Apartment,Beautiful Villa located in Biel with 1 bathrooms and 2 bedrooms.
+PR0098,Bern,2151000,239,2,3,Apartment,Beautiful Villa located in Bern with 4 bathrooms and 5 bedrooms.
+PR0099,Lucerne,1771000,161,5,1,Villa,Beautiful Villa located in Lucerne with 4 bathrooms and 2 bedrooms.
+PR0100,Lucerne,2530000,230,2,4,Apartment,Beautiful House located in Lucerne with 3 bathrooms and 3 bedrooms.
